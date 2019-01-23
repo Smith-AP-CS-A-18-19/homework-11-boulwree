@@ -6,13 +6,16 @@ public class Homework11 {
 	 * variables. The constructor should create and save an
 	 * ArrayList of int values
 	 */
-	public Homework11() {
+	 private ArrayList<Integer> list;
+	public Homework11(ArrayList<Integer> arr) {
+		this.list = new ArrayList<Integer>();
 
 	}
 
 	/* Return the stored ArrayList
 	 */
 	public ArrayList<Integer> getList() {
+		return list;
 
 	}
 
@@ -21,6 +24,10 @@ public class Homework11 {
 	 * the resultant ArrayList should be n - m.
 	 */
 	public void problem1(int n, int m) {
+		for (int i = n; i < m; i++){
+			list.add(i);
+
+		}
 
 	}
 
@@ -30,6 +37,11 @@ public class Homework11 {
 	 * the right shift their indices down one.
 	 */
 	public void problem2(int n) {
+		for (int i = 0; i < list.size(); i++){
+			if (i % n == 0){
+				list.remove(i);
+			}
+		}
 
 	}
 
@@ -38,6 +50,25 @@ public class Homework11 {
 	 * class. Ensure that you create the constructor
 	 * appropriately and import java.util.ArrayList.
 	 */
+
+	 public class Homework11A extends HomeWork11{
+		 public Homework11A(ArrayList<Integer> arr){
+			 super(list);
+		 }
+		 public int problem4(){
+			 int sum = 0;
+	 		for(int i = 0; i < list.size(); i++){
+	 			sum += list.get(i);
+	 		}
+	 		return sum;
+		 }
+		 public void problem5(){
+			 for (int i = 0; i < list.size(); i++){
+				 if (i % n != 0){
+					 list.remove(i);
+		 }
+		 super.problem2();
+	 }
 
 	/* Problem 4:
 	 * Write the method problem4 in the Homework11A
