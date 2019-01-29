@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class Homework11A extends Homework11{
-  public Homework11A(ArrayList<Integer> list){
-    super(list);
+  public Homework11A(){
+    super();
   }
   public int problem4(){
     int sum = 0;
