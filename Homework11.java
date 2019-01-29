@@ -7,7 +7,7 @@ public class Homework11 {
 	 * ArrayList of int values
 	 */
 	 private ArrayList<Integer> list;
-	public Homework11(ArrayList<Integer> arr) {
+	public Homework11() {
 		this.list = new ArrayList<Integer>();
 
 	}
@@ -40,6 +40,7 @@ public class Homework11 {
 		for (int i = 0; i < list.size(); i++){
 			if (i % n == 0){
 				list.remove(i);
+				i--;
 			}
 		}
 
@@ -51,24 +52,6 @@ public class Homework11 {
 	 * appropriately and import java.util.ArrayList.
 	 */
 
-	 public class Homework11A extends HomeWork11{
-		 public Homework11A(ArrayList<Integer> arr){
-			 super(list);
-		 }
-		 public int problem4(){
-			 int sum = 0;
-	 		for(int i = 0; i < list.size(); i++){
-	 			sum += list.get(i);
-	 		}
-	 		return sum;
-		 }
-		 public void problem5(){
-			 for (int i = 0; i < list.size(); i++){
-				 if (i % n != 0){
-					 list.remove(i);
-		 }
-		 super.problem2();
-	 }
 
 	/* Problem 4:
 	 * Write the method problem4 in the Homework11A
