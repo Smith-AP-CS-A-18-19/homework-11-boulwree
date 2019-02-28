@@ -37,6 +37,10 @@ public class Homework11 {
 	 * the right shift their indices down one.
 	 */
 	public void problem2(int n) {
+		/* This removes all INDICES that are divisible
+		 * by n. You must access the element at i and
+		 * then check it's divisibility (list.get(i))
+		 */
 		for (int i = 0; i < list.size(); i++){
 			if (i % n == 0){
 				list.remove(i);
@@ -113,7 +117,7 @@ public class Homework11 {
 			passed = false;
 		} else {
 			System.out.println("Pass 4");
-		} 
+		}
 
 		hw11a.problem2(12);
 		if (al.size() != 4) {
