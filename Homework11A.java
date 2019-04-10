@@ -14,8 +14,9 @@ public class Homework11A extends Homework11{
   @Override
   public void problem2(int n){
     for (int i = 0; i < getList().size(); i++){
-      if (i % n != 0){
+      if (getList().get(i) % n != 0){
         getList().remove(i);
+        i--;
   }
 
 }

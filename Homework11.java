@@ -38,7 +38,7 @@ public class Homework11 {
 	 */
 	public void problem2(int n) {
 		for (int i = 0; i < list.size(); i++){
-			if (i % n == 0){
+			if (list.get(i) % n == 0){
 				list.remove(i);
 				i--;
 			}
@@ -113,7 +113,7 @@ public class Homework11 {
 			passed = false;
 		} else {
 			System.out.println("Pass 4");
-		} 
+		}
 
 		hw11a.problem2(12);
 		if (al.size() != 4) {
